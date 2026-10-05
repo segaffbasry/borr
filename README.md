@@ -63,11 +63,13 @@ CSS variables.
 | 1 | Hero | Abyss | film + intro block | film + intro | The live opening block is folded into the hero |
 | 2 | About Borr Drilling | Abyss | photo + link | photo, vision, 2 paragraphs, 3 figures, link | The live block has no copy, so the words are the About page's own (vision, company details) |
 | 3 | Global Presence | Petrol | 5 regions, 29 rigs | 5 regions, 29 rigs | Vector triangle map; choosing a region lights it and lists its rigs |
-| 4 | News | Foam | 3 releases | 3 releases | Date, title, opening of each release; links to the live Euroland release pages |
-| 5 | Join Our Team | Foam | photo + link | photo, Careers page line, link | |
-| 6 | Sustainability | Abyss | photo + report link | photo, strapline, 3 pillars, report link | Copy from the Sustainability page |
+| 4 | News | White | 3 releases | 3 releases | Date, title, opening of each release; links to the live Euroland release pages |
+| 5 | Join Our Team | White | photo + link | photo, Careers page line, link | |
+| 6 | Sustainability | White | photo + report link | photo, strapline, 3 pillars, report link | Copy from the Sustainability page |
 | 7 | Share Information | White | 2 tickers | 2 tickers with six-month charts | Snapshot from the live feed (see below) |
-| 8 | Footer | Abyss | contact, 2 legal, LinkedIn | all, plus the nav groups | Child links hidden on phones; they are all in the menu |
+| 8 | Footer | White | contact, 2 legal, LinkedIn | all, plus the nav groups | Child links hidden on phones; they are all in the menu |
+
+**Client feedback (5 October 2026):** the hero eyebrow is removed, and from News to the end the page stays white (the footer included), so the background changes only once, from the dark opening chapters to white. The sustainability photograph stays full bleed as an image band.
 
 **Gaps:** none cut. The About block moved above Global Presence so photography leads the page (hero film, rig
 photo, then the map). Release titles drop the repeated "Borr Drilling Limited -" prefix. House rule: no em or en
@@ -107,7 +109,7 @@ tab is throttled. It plays once per tab session (`sessionStorage["borr-intro"]`)
 ### Scenes (`components/Backdrop.tsx`)
 
 There are no hard section fills. One fixed field sits behind the page, and each section declares `data-scene`
-(abyss, petrol, foam or white). The field holds a scene, then blends into the next over the last 40% of a viewport,
+(abyss, petrol or white; the page goes Abyss, Petrol, then white from News to the footer). The field holds a scene, then blends into the next over the last 40% of a viewport,
 like the sea changing with depth. `--fg` and `--fg2` follow the blended luminance at the viewport centre, and `--hfg`
 (the header) follows the colour behind the header, so contrast holds mid-blend.
 

@@ -54,7 +54,7 @@ export default function Home() {
         <Presence />
 
         {/* News: the releases the live homepage lists, newest first. */}
-        <section className="news section" id="news" data-scene="foam" aria-labelledby="news-title" tabIndex={-1}>
+        <section className="news section" id="news" data-scene="white" aria-labelledby="news-title" tabIndex={-1}>
           <div className="wrap">
             <div className="row-head">
               <div>
@@ -79,7 +79,7 @@ export default function Home() {
         </section>
 
         {/* Join Our Team: the live block's crew photograph (the Gerd's helideck) with the Careers page's opening line. */}
-        <section className="careers section" id="careers" data-scene="foam" aria-labelledby="careers-title" tabIndex={-1}>
+        <section className="careers section" id="careers" data-scene="white" aria-labelledby="careers-title" tabIndex={-1}>
           <div className="wrap careers-grid">
             <div className="careers-copy">
               <Label>{careers.quote}</Label>
@@ -97,7 +97,7 @@ export default function Home() {
         </section>
 
         {/* Sustainability: the live block's aerial photograph full bleed under its title, then the strategy's three pillars. */}
-        <section className="sust" id="sustainability" data-scene="abyss" data-late aria-labelledby="sust-title" tabIndex={-1}>
+        <section className="sust" id="sustainability" data-scene="white" data-late aria-labelledby="sust-title" tabIndex={-1}>
           <figure className="sust-media" data-reveal="image">
             <picture>
               <source media="(max-width: 767px)" srcSet={sustainability.image.small} />
@@ -121,7 +121,7 @@ export default function Home() {
         <Shares />
       </main>
 
-      <footer className="site-footer" id="contact" data-scene="abyss" data-late tabIndex={-1}>
+      <footer className="site-footer" id="contact" data-scene="white" data-late tabIndex={-1}>
         <div className="wrap">
           <div className="footer-top">
             <a className="footer-cta" href={contact.href} target="_blank" rel="noopener">

@@ -61,7 +61,6 @@ export const hero = {
   title: h.intro.title,
   text: h.intro.text,
   cta: link(h.intro.cta),
-  label: "NYSE and Euronext Oslo Børs: BORR", // from every release's dateline, "(NYSE and OSE: BORR)"
   video: { src: "/media/hero.mp4", small: "/media/hero-960.mp4", poster: "/media/hero-poster.jpg" },
 };
 

@@ -3,13 +3,13 @@
 import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 import { EASE, EASE_IO, onIntro, reducedMotion } from "@/components/Motion";
-import { Icon, Label, TriButton } from "@/components/ui";
+import { Icon, TriButton } from "@/components/ui";
 import { hero } from "@/lib/content";
 import { splitWords } from "@/lib/split";
 
 /* The live home film (HP.mp4) full bleed, with the homepage's opening block set low on the left. The entrance waits
    for the preloader's handover: the film settles from a slight zoom as the curtain clears, the headline's words rise
-   one after another (per-word motion is kept to the hero), then the label, copy and button follow. The film is muted,
+   one after another (per-word motion is kept to the hero), then the copy and button follow. The film is muted,
    loops, pauses when it leaves the screen and has its own pause control; its first frame is the poster. */
 export function Hero() {
   const root = useRef<HTMLElement>(null);
@@ -61,7 +61,6 @@ export function Hero() {
       </div>
       <div className="wrap hero-inner">
         <div className="hero-copy">
-          <div data-hero-in><Label reveal={false} className="hero-label">{hero.label}</Label></div>
           <h1 id="hero-title" className="hero-title">{hero.title}</h1>
           <p className="hero-text" data-hero-in>{hero.text}</p>
           <div data-hero-in><TriButton href={hero.cta.href}>{hero.cta.label}</TriButton></div>
